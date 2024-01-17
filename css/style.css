@@ -1,0 +1,134 @@
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+
+
+body {
+    background-color: #272b30;
+    ;
+}
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+
+}
+
+h3 {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 10px;
+
+}
+
+
+
+
+.card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.free {
+    font-family: sans-serif;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 14px;
+    /* background-color: RGBA(13, 110, 250) !important; */
+    padding: 0.5rem;
+    height: 30px;
+}
+
+
+.desc {
+    font-family: sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+
+}
+
+p {
+    color: white;
+    opacity: 0.5;
+    line-height: 21px;
+    font-size: 0.875rem;
+}
+
+figure img {
+    max-width: 400px;
+}
+
+.details-header {
+    color: white;
+}
+
+h1 {
+    color: white;
+
+}
+
+.title {
+
+
+    color: white;
+
+}
+
+.navbar {
+    background-color: #3A497B !important;
+
+    border-radius: 50px;
+    width: 75%;
+    padding: 0;
+    height: 65px;
+    margin: auto;
+
+
+}
+
+ul li a {
+    color: white !important;
+    font-size: 12.25px !important;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color, 2s;
+}
+
+.navbar h2 {
+    color: #FFFFFF !important;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+.navbar h2 img {
+    width: 50px;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.navbar-nav {
+    margin-left: auto;
+
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+
+}
+
+ul li a:hover {
+    color: #0099CC !important;
+
+}
