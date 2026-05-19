@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Game Reviews</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- HOME SECTION -->
+  <section id="sectionone" class="d-block">
+
+    <header class="site-header">
+      <div class="header-overlay"></div>
+      <img src="imgs/wraper.png" alt="background" class="header-bg" />
+      <div class="header-content">
+        <h1 class="header-title">GAME<span>VERSE</span></h1>
+        <p class="header-sub">Discover free-to-play games</p>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <div class="nav-inner container">
+        <div class="nav-logo">
+          <img src="imgs/logo-sm.png" alt="logo" />
+          <span>GAMEVERSE</span>
+        </div>
+
+        <div class="search-wrapper">
+          <i class="fas fa-search search-icon"></i>
+          <input type="text" id="searchInput" class="search-input" placeholder="Search games..." />
+          <button id="clearSearch" class="clear-btn d-none"><i class="fas fa-times"></i></button>
+        </div>
+
+        <button class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <div class="categories-bar" id="categoriesBar">
+        <div class="container">
+          <ul class="categories-list" id="categoriesList">
+            <li class="cat-item active" data-category="mmorpg">MMORPG</li>
+            <li class="cat-item" data-category="shooter">SHOOTER</li>
+            <li class="cat-item" data-category="sailing">SAILING</li>
+            <li class="cat-item" data-category="permadeath">PERMADEATH</li>
+            <li class="cat-item" data-category="superhero">SUPERHERO</li>
+            <li class="cat-item" data-category="pixel">PIXEL</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container my-5">
+      <div id="resultsInfo" class="results-info d-none"></div>
+      <div id="games" class="row row-gap-4"></div>
+      <div id="noResults" class="no-results d-none">
+        <i class="fas fa-gamepad"></i>
+        <p>No games found for "<span id="noResultsTerm"></span>"</p>
+      </div>
+    </main>
+
+  </section>
+
+  <!-- DETAILS SECTION -->
+  <section id="section2" class="d-none">
+    <div class="container">
+      <div class="details-header">
+        <button id="exitBtn" class="back-btn">
+          <i class="fas fa-arrow-left"></i> Back
+        </button>
+        <h2 class="details-title">Game Details</h2>
+      </div>
+      <div id="gamedetail" class="row"></div>
+    </div>
+  </section>
+
+  <script type="module" src="js/index.js"></script>
+</body>
+</html>
